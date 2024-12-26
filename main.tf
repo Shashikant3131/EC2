@@ -14,6 +14,7 @@ provider "aws" {
 
  resource "aws_instance" "My_ec2" {
     instance_type = "t2.micro"
+    ami = "ami-01816d07b1128cd2d"
     
   }
 
