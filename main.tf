@@ -12,14 +12,14 @@ provider "aws" {
   region = "us-east-1"
 }
 
- resource "aws_instance" "myec2" {
-  
-  ami = "ami-012967cc5a8c9f891"
-  instance_type = "t2.micro"
-
-  
-
-   tags = {
-    Name = "My EC2 Instance"
+ resource "aws_instance" "My_ec2" {
+    instance_type = "t2.micro"
+    ami = "ami-01816d07b1128cd2d"
+    
   }
-}
+
+resource "aws_instance" "second_ec2" {
+    instance_type = "t2.micro"
+    ami = "ami-01816d07b1128cd2d"
+    
+  }
